@@ -1,7 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const LINE =
-  "I wrote the patch in /tmp. The sandbox deletes /tmp on exit, and I exited on time.";
+  "I finished on time. The only copy was in /tmp, which the sandbox deletes on exit.";
 
 if ([...LINE].length < 1 || [...LINE].length > 200 || LINE.trim() === "") {
   throw new Error("entry length");
